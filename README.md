@@ -34,3 +34,5 @@ Persistencia de datos en el listado del carrito
 # Deploy a Netlify
 
 Ejecutar el comando de buildeo `npm run build` para obtener la versión optimizada de la aplicación lista para distribuir, subir a un servicio como Netlify.
+
+[Live Site](https://frabjous-dieffenbachia-03843d.netlify.app/)
