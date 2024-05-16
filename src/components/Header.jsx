@@ -1,6 +1,9 @@
 import Cart from "./Cart"
 
-export default function Header({cart, removeFromCart, incrementQuantity, decreaseQuantity, clearCart}) {
+export default function Header({
+  cart, removeFromCart, incrementQuantity, 
+  decreaseQuantity, clearCart, isEmpty, cartTotal,
+}) {
 
 return (
 <header className="py-5 header">
@@ -18,6 +21,8 @@ return (
                 incrementQuantity={incrementQuantity}
                 decreaseQuantity={decreaseQuantity}
                 clearCart={clearCart}
+                isEmpty={isEmpty} 
+                cartTotal={cartTotal}
               />
             </nav>
         </div>

@@ -1,11 +1,8 @@
-import { useMemo } from "react"
 
-
-export default function Cart({items, removeFromCart, incrementQuantity, decreaseQuantity, clearCart}) {
-
-
-  const isEmpty = useMemo(() => items.length === 0, [items]);
-  const total = useMemo(() => items.reduce((sum, guitar,) => sum + (guitar.price * guitar.quantity), 0), [items])
+export default function Cart({
+  items, removeFromCart, incrementQuantity, 
+  decreaseQuantity, clearCart, isEmpty, cartTotal
+}) {
 
   return <>
     <div className="carrito">
@@ -69,7 +66,7 @@ export default function Cart({items, removeFromCart, incrementQuantity, decrease
               </tbody>
           </table>
 
-          <p className="text-end">Total pagar: <span className="fw-bold">${total}</span></p>
+          <p className="text-end">Total pagar: <span className="fw-bold">${cartTotal}</span></p>
           <button 
             className="btn btn-dark w-100 mt-3 p-2"
             onClick={() => clearCart()}
