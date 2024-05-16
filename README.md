@@ -30,3 +30,7 @@ Persistencia de datos en el listado del carrito
 
 `localStorage.setItem()`
 `localStorage.getItem()`
+
+# Deploy a Netlify
+
+Ejecutar el comando de buildeo `npm run build` para obtener la versión optimizada de la aplicación lista para distribuir, subir a un servicio como Netlify.
