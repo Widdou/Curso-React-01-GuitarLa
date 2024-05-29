@@ -1,3 +1,4 @@
+// DEPRECADO EN FAVOR DEL PATRON REDUCER
 
 import { useState, useEffect, useMemo } from 'react'
 import { db } from '../data/db'

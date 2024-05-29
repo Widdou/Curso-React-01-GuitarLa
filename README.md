@@ -49,6 +49,11 @@ En este caso se crea el `useCart` para envolver la logica de los componentes del
 #### Consideraciones:
 Los hooks al momento de instanciarse es como hacerlo con una clase, por lo que su contexto va a estar vinculado a ello.
 
+
+## Migracion de CustomHook a Reducer (cart-reducer)
+OBS: 
+Las acciones de los reducers se ejecutan dos veces, por tanto en una accion como añadir e incrementar un item en el estado, se debe manipular el array con un array map de modo que la logica no se vea afectada
+
 ===
 
 

@@ -1,20 +1,7 @@
 
 import Cart, {CartProps} from "./Cart"
 
-// type HeaderProps = {
-//   cart : CartItem[]
-//   removeFromCart : (id : Guitar['id']) => void
-//   incrementQuantity : (id : Guitar['id']) => void
-//   decreaseQuantity : (id : Guitar['id']) => void
-//   clearCart : () => void
-//   isEmpty : boolean
-//   cartTotal : number
-// }
-
-export default function Header({
-  items, removeFromCart, incrementQuantity, 
-  decreaseQuantity, clearCart, isEmpty, cartTotal,
-} : CartProps) {
+export default function Header({cart, dispatch} : CartProps) {
 
 return (
 <header className="py-5 header">
@@ -27,13 +14,8 @@ return (
             </div>
             <nav className="col-md-6 a mt-5 d-flex align-items-start justify-content-end">
               <Cart
-                items={items}
-                removeFromCart={removeFromCart}
-                incrementQuantity={incrementQuantity}
-                decreaseQuantity={decreaseQuantity}
-                clearCart={clearCart}
-                isEmpty={isEmpty} 
-                cartTotal={cartTotal}
+                cart={cart}
+                dispatch={dispatch}
               />
             </nav>
         </div>
