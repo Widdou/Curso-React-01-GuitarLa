@@ -92,4 +92,4 @@ Lo cual hay que evitarlo, para aprovechar las ventajas de TS, lo ideal es ser de
 
 Ejecutar el comando de buildeo `npm run build` para obtener la versión optimizada de la aplicación lista para distribuir, subir a un servicio como Netlify.
 
-[Live Site](https://frabjous-dieffenbachia-03843d.netlify.app/)
+[Live Site](https://widdou-learn-tienda-guitarra.netlify.app/)
